@@ -1,11 +1,12 @@
-// Constructor general, la estructura de cada elemento Producto.
+//! Constructor general, la estructura de cada elemento Producto.
 
 class Producto {
-    constructor(categoria, marca, nombre_modelo, precio, descripcion, imagen) {
+    constructor(id_categoria, categoria, marca, nombre_modelo, precio, descripcion, imagen) {
         this.id = this.generar_id()
         this.stock = this.stock_random()
 
-        this.categoria = categoria,
+        this.id_categoria = id_categoria,
+            this.categoria = categoria,
             this.marca = marca,
             this.nombre_modelo = nombre_modelo,
             this.precio = precio,
@@ -28,7 +29,7 @@ class Producto {
             let index = Math.floor(Math.random() * caracteres.length)
             id += caracteres[index]
         }
-        
+
         return id
     }
 

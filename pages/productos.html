@@ -8,40 +8,48 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/partials.css">
     <link rel="stylesheet" href="../public/css/productos.css">
 </head>
 
 <body class="modo_claro">
     <header>
-        <!-- bg-body-tertiary -->
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Offcanvas navbar</a>
+                <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENÚ</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
 
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <div class="offcanvas-body px-3">
+                        <a class="navbar-brand" href="../index.html">LOGO</a>
+
+                        <form class="d-flex" role="search">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><i class="bx bx-search-alt-2"></i></button>
+                        </form>
+
+                        <ul class="navbar-nav"> <!-- flex-grow-1 justify-content-end  pe-3 -->
                             <li class="nav-item">
                                 <button class="dark-light-mood">Icono</button>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                                <button class="dark-light-mood"><i class="bx bx-shopping-bag"></i></button>
                             </li>
+                            
+                            <!-- AGREGAR CATEGORIAS EN VERSION MOBILE (Más a futuro) -->
+                            <!-- <li>
+                                <div>CATEGORIAS</div>
+                            </li> -->
                         </ul>
-
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -52,6 +60,13 @@
         <img src="../public/images/banner.webp" alt="">
     </div>
 
+    <div class="categorias_container">
+        <h2>Categorías</h2>
+        <div class="categorias">
+            <!-- Botones dinámicos por categoría -->
+        </div>
+    </div>
+
     <section class="hero_container">
         <div class="hero_box">
             <article class="filtros_container">
@@ -59,13 +74,13 @@
                     <p>Ordenar por:</p>
                     <select class="form-select" aria-label="Default select example">
                         <option class="dropdown-item" value="relevante" selected>Más relevante</option>
-                        <option class="dropdown-item" value="mayor" >Precio - Mayor a menor</option>
-                        <option class="dropdown-item" value="menor" >Precio - Menor a mayor</option>
-                        <option class="dropdown-item" value="alfabeticamente" >Nombre A-Z</option>
+                        <option class="dropdown-item" value="mayor">Precio - Mayor a menor</option>
+                        <option class="dropdown-item" value="menor">Precio - Menor a mayor</option>
+                        <option class="dropdown-item" value="alfabeticamente">Nombre A-Z</option>
                     </select>
                 </div>
-                
-                <!-- <div class="accordion" id="accordionPanelsStayOpenExample">
+
+                <div class="accordion" id="accordionPanelsStayOpenExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -76,11 +91,7 @@
                         </h2>
                         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                                <ul>
-                                    <a href="#"><input type="checkbox">Marca 1</a>
-                                    <a href="#"><input type="checkbox">Marca 2</a>
-                                    <a href="#"><input type="checkbox">Marca 3</a>
-                                </ul>
+                                <!-- Inputs dinámicos según marca -->
                             </div>
                         </div>
                     </div>
@@ -102,7 +113,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <!-- <div class="accordion-item">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
@@ -112,21 +123,20 @@
                         </h2>
                         <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                                <p>Segun caracteristica especial de algun producto?</p>
+                                <p>Según característica especial de un producto</p>
                             </div>
                         </div>
-                    </div>
-                </div> -->
+                    </div> -->
+                </div>
             </article>
         </div>
 
         <div class="template_container">
-            <!-- Acá se renderizan las distintas cards -->
+            <!-- Renderización de las distintas cards -->
         </div>
 
         <template>
             <article class="productos_container">
-                <div class="producto">
                     <div class="img_producto">
                         <img src="../public/images/samsung_S24+.png" alt="">
                     </div>
@@ -141,20 +151,17 @@
                         </div>
 
                         <div class="btn_producto_container">
-                            <button class="boton_producto">Agregar a carrito <i
-                                    class="bx bxs-cart-add"></i></button>
+                            <button class="boton_producto">Agregar a carrito <i class="bx bxs-cart-add"></i></button>
                         </div>
                     </div>
-                </div>
             </article>
         </template>
-
     </section>
-    
+
     <footer>
         <div class="footer_container">
             <div class="footer_logo">
-                <img src="../public/images/samsung_S24+.png" alt="">
+                <a href="../index.html"><img src="../public/images/samsung_S24+.png" alt=""></a>
             </div>
 
             <div class="footer_datos">

@@ -1,89 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Work Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-h1,
-h2,
-h3,
-p,
-hr,
-ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-/* HEADER - NAVBAR */
-.modo_oscuro {
-    background-color: #212529;
-    color: white;
-
-    nav {
-        background-color: #212529;
-
-        button,
-        a {
-            color: white;
-        }
-    }
-
-    footer section {
-        border-top: 1px solid white;
-    }
-}
-
-.modo_claro {
-    background-color: white;
-    color: #212529;
-}
-
-.nav-item {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-toggler {
-    border: none;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
-    outline: none;
-}
-
-.dark-light-mood {
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    border: none;
-    gap: 5px;
-}
-
-.bx-sun,
-.bx-moon {
-    font-size: 18px;
-}
-
-
-/* DAR ESTILO AL NAVBAR Y MENU HAMBURGUESA */
-
-/* .offcanvas {
-    flex-direction: row;
-} */
-
-
 /* BANNER INDEX */
 .banner {
     width: 100%;
@@ -97,123 +11,19 @@ ul {
     object-position: center;
 }
 
-.categorias_container {
+
+/* BANNER PROMOS BANCARIAS */
+.banner_promos {
     width: 100%;
-    height: 120px;
-    background-color: #0519ad;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.categorias_container h2 {
-    width: 20%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    font-weight: 400;
-    border-right: 1px solid white;
-    color: white;
-}
-
-.categorias {
-    display: flex;
-    width: 70%;
-}
-
-.btn-categoria {
-    width: 33%;
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    border: none;
-    border-right: 1px solid white;
-}
-
-.btn-categoria a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    gap: 8px;
-}
-
-.bx-laptop,
-.bx-mobile,
-.bxs-devices {
-    font-size: 28px;
-}
-
-
-/* FOOTER */
-footer {
-    width: 100%;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
-    background-color: #21252913;
-    /* margin-top: ; Habilitarlo cuando ubique algun baner entre medio de las categorias y el footer */
-}
-
-.footer_container {
-    width: 80%;
-    /* height: 200px; */
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.footer_logo {
-    width: 20%;
-    height: 60px;
-}
-
-.footer_logo img {
-    width: 100%;
-    height: 100%;
+.banner_promos img {
+    width: 90%;
+    height: 200px;
     object-fit: cover;
     object-position: center;
-}
-
-.footer_datos {
-    width: 80%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 80px;
-}
-
-.footer_datos h2 {
-    font-size: 18px;
-}
-
-.footer_contacto,
-.footer_ventas {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.footer_telefono {
-    margin-top: 5px;
-}
-
-.footer_telefono p {
-    font-weight: 500;
-}
-
-.footer_copyright {
-    width: 80%;
-    border-top: 1px solid #2125298a;
-    padding-top: 10px;
 }
