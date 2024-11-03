@@ -30,21 +30,20 @@
                     </div>
 
                     <div class="offcanvas-body px-3">
-                        <a class="navbar-brand" href="index.html">LOGO</a>
+                        <a class="navbar-brand" href="index.html">iTech</a>
 
                         <form class="d-flex" role="search">
                             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit"><i class="bx bx-search-alt-2"></i></button>
+                            <button class="btn btn-outline-success" type="submit"><i
+                                    class="bx bx-search-alt-2"></i></button>
                         </form>
 
                         <ul class="navbar-nav"> <!-- flex-grow-1 justify-content-end  pe-3 -->
                             <li class="nav-item">
-                                <button class="dark-light-mood">Icono</button>
+                                <button class="dark-light-mood boton_carrito"><i
+                                        class="bx bx-shopping-bag"></i></button>
                             </li>
-                            <li class="nav-item">
-                                <button class="dark-light-mood"><i class="bx bx-shopping-bag"></i></button>
-                            </li>
-                            
+
                             <!-- AGREGAR CATEGORIAS EN VERSION MOBILE (Más a futuro) -->
                             <!-- <li>
                                 <div>CATEGORIAS</div>
@@ -60,21 +59,77 @@
         <img src="public/images/banner.webp" alt="">
     </div>
 
+    <div class="ocultar_carrito">
+        <div class="carrito">
+            <div class="carrito_listado">
+                <div class="carrito_head">
+                    <p>Carrito de compras</p>
+                    <button class="cerrar_carrito"><i class="bx bx-plus close"></i></button>
+                </div>
+
+                <div class="carrito_container">
+                    <!-- Estructura dinámica -->
+                </div>
+            </div>
+
+            <div class="carrito_footer">
+                <div class="carrito_total">
+                    <!-- Sumar valor total de productos -->
+                    <p>Total:</p>
+                    <p>$ <span class="precio_total">0.00</span></p>
+                </div>
+
+                <div class="carrito_botones">
+                    <button class="finalizar_compra">Finalizar Compra</button>
+                    <a>Ver más productos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="categorias_container">
-        <h2>Categorías</h2>
+        <h2>CATEGORÍAS</h2>
         <div class="categorias">
             <!-- Botones dinámicos por categoría -->
         </div>
     </div>
 
-    <div class="banner_promos">
-        <img src="public/images/banner.webp" alt="">
+    <div class="beneficios_container">
+        <div class="beneficios">
+            <div class="beneficios_descuentos">
+                <div>
+                    <h2>20% OFF</h2>
+                    <p>Abonando con</p>
+                </div>
+
+                <p class="p_destacado">DINERO EN EFECTIVO</p>
+            </div>
+
+            <div class="beneficios_cuotas">
+                <div>
+                    <h2>3 Cuotas</h2>
+                    <p>Sin interés</p>
+                </div>
+
+                <p class="p_destacado">DE LUNES A JUEVES</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="productos_destacados">
+        <p>PRODUCTOS DESTACADOS</p>
+        <p>Agregar carrusel de que pase las cards en grupos de 3</p>
+    </div> -->
+
+    <div class="banner_promos_bancarias">
+        <img src="public/images/banner_pb.webp" alt="">
     </div>
 
     <footer>
         <div class="footer_container">
             <div class="footer_logo">
-                <a href="index.html"><img src="public/images/samsung_S24+.png" alt=""></a>
+                <!-- <a href="index.html"><img src="public/images/samsung_S24+.png" alt=""></a> -->
+                <a href="index.html">iTech</a>
             </div>
 
             <div class="footer_datos">
@@ -113,10 +168,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="js/constructor_producto.js"></script>
     <script src="js/sistema.js"></script>
-    <script src="js/modo.js"></script>
+    <script src="js/carrito.js"></script>
     <script src="js/main.js"></script>
 </body>
 

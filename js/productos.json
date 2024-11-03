@@ -1,0 +1,92 @@
+[
+    {
+        "id_categoria": 1,
+        "categoria": "Notebook",
+        "marca": "LENOVO",
+        "nombre_modelo": "I3 SLIM 82XB003QAR",
+        "precio": 500,
+        "producto_destacado": true,
+        "imagen": "../public/images/1_notebooks/Notebook_LENOVO_I3_SLIM_82XB003QAR.png",
+        "descripcion": "Procesador Interl Core I3-N305. Rápida capacidad multitarea con 8 GB de RAM LPDDR5 y SSD M.2 de 256 GB. Imagen clara y fluida con pantalla de 15.6'' y resolución 1920x1080 respaldada por gráficos Intel UHD integrados."
+    },
+    {
+        "id_categoria": 1,
+        "categoria": "Notebook",
+        "marca": "ASUS",
+        "nombre_modelo": "I7 VIVOBOOK 15 X1502ZA-EJ194W",
+        "precio": 200,
+        "producto_destacado": false,
+        "imagen": "../public/images/1_notebooks/ASUS-I7-VIVOBOOK-15-X1502ZA-EJ194W.png",
+        "descripcion": "Pantalla de 15.16'' FHD. Procesador Intel Core i7-1260P 2.1 GHz, 12 nucleos. Capacidad 512 GB M.2 NVMe PCIe 3.0 SSD / RAM 16 GB DDR4 (8GB DDR4 + 8GB DDR4 SO-DIMM). Placa de video intel iris Xe graphics."
+    },
+    {
+        "id_categoria": 3,
+        "categoria": "Tablet",
+        "marca": "SAMSUNG",
+        "nombre_modelo": "GALAXY A9+ -SM-X210N 11''",
+        "precio": 100,
+        "producto_destacado": false,
+        "imagen": "../public/images/3_tablets/Tablet-SAMSUNG-GALAXY-A9-SM-X210N-11.png",
+        "descripcion": "Pantalla de 11'' TFT. Resolucion 1920x1200. Display 16M. Procesador QualcomSM6375 Octa core (2.2GHz,1.8GHz). Capacidad 64 Gb (expandible hasta 1 Tb). RAM 4 Gb. Camara principal de 8 Mp. Camara frontal 5 Mp. Sistema operativo Android."
+    },
+    {
+        "id_categoria": 2,
+        "categoria": "Celular",
+        "marca": "MOTOROLA",
+        "nombre_modelo": "EDGE 50 PRO - XT2403-2",
+        "precio": 150,
+        "producto_destacado": false,
+        "imagen": "../public/images/2_celulares/Celular-MOTOROLA-EDGE-50-PRO-XT2403-2.png",
+        "descripcion": "Pantalla curva POLED de 6.67''. Procesador Qualcomm Snapdragon 7 Gen 3, Octa core. Capacidad 512 GB. RAM 12 GB. Camara principal: 50 MP. Gran angular y macro: 13 MP. Zoom digital (30x fotos / 20x videos). Camara frontal 50 MP."
+    },
+    {
+        "id_categoria": 1,
+        "categoria": "Notebook",
+        "marca": "HP",
+        "nombre_modelo": "I7 14-DY2000LA",
+        "precio": 250,
+        "producto_destacado": false,
+        "imagen": "../public/images/1_notebooks/Notebook-HP-I7-14-DY2000LA.png",
+        "descripcion": "Notebook 2 en 1. Pantalla multitactil FHD (1920x1080). Procesador intel core I7-1255U. Almacenamiento: Unidad de estado solido de 512 GB. Memoria de 8 GB de RAM. Placa de video integrada Graficos Intel Iris Xe. Lector de huella digital."
+    },
+    {
+        "id_categoria": 3,
+        "categoria": "Tablet",
+        "marca": "LENOVO",
+        "nombre_modelo": "M8 - ZABU0022AR 8''",
+        "precio": 100,
+        "producto_destacado": false,
+        "imagen": "../public/images/3_tablets/Tablet-LENOVO-M8-ZABU0022AR-8.png",
+        "descripcion": "Pantalla de 8'' HD. Procesador Mediatek Helio A2. Capacidad 64 GB. RAM LPDDR4x soldado de 4 GB. Camara principal de 5 Mp. Camara frontal de 2 Mp. Sistema operativo Android 12."
+    },
+    {
+        "id_categoria": 2,
+        "categoria": "Celular",
+        "marca": "SAMSUNG",
+        "nombre_modelo": "GALAXY A35 - SM-A356E",
+        "precio": 200,
+        "producto_destacado": false,
+        "imagen": "../public/images/2_celulares/Celular-SAMSUNG-GALAXY-A35-SM-A356E.png",
+        "descripcion": "Pantalla de 6.6'' FHD+ Super AMOLED. Procesador Exynos1380 Octa core. Capacidad 256 Gb (expandible hasta 1 Tb). RAM 8 Gb. Camara principal 50 + 8 + 5 MP. Zoom digital hasta 10x. Camara frontal 13 Mp. Sistema operativo Android."
+    },
+    {
+        "id_categoria": 1,
+        "categoria": "Notebook",
+        "marca": "ASUS",
+        "nombre_modelo": "I5 ZENBOOK 14X OLED UX5401EA-L7101T",
+        "precio": 90,
+        "producto_destacado": false,
+        "imagen": "../public/images/1_notebooks/Notebook-ASUS-I5-ZENBOOK-14X-OLED-UX5401EA-L7101T.png",
+        "descripcion": "Pantalla de 14'', HD. Procesador Intel Core i5-1135G7. Capacidad 512 GB SSD / RAM 8 GB. Placa de video Integrada Graficos Intel Iris Xe. Sistema operativo Windows 10 home."
+    },
+    {
+        "id_categoria": 2,
+        "categoria": "Celular",
+        "marca": "SAMSUNG",
+        "nombre_modelo": "GALAXY S24 ULTRA - SM-S928BZYMARO",
+        "precio": 50,
+        "producto_destacado": true,
+        "imagen": "../public/images/2_celulares/Celular-SAMSUNG-GALAXY-S24-ULTRA-SM-S928BZYMARO.png",
+        "descripcion": "Pantalla de 6.8'' Quad HD+. Procesador Snapdragon 8 Gen 3, Octa core. Capacidad 512 GB. RAM 12 GB. Camara principal 200 + 50 + 12 + 10 Mp. Camara frontal 12 Mp. Sistema operativo Android. Incluye lapiz."
+    }
+]

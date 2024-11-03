@@ -7,6 +7,7 @@
     <title>Productos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../public/css/partials.css">
     <link rel="stylesheet" href="../public/css/productos.css">
@@ -14,7 +15,7 @@
 
 <body class="modo_claro">
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
                 <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -30,22 +31,21 @@
                     </div>
 
                     <div class="offcanvas-body px-3">
-                        <a class="navbar-brand" href="../index.html">LOGO</a>
+                        <a class="navbar-brand" href="../index.html">iTech</a>
 
                         <form class="d-flex" role="search">
                             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit"><i class="bx bx-search-alt-2"></i></button>
+                            <button class="btn btn-outline-success" type="submit"><i
+                                    class="bx bx-search-alt-2"></i></button>
                         </form>
 
                         <ul class="navbar-nav"> <!-- flex-grow-1 justify-content-end  pe-3 -->
                             <li class="nav-item">
-                                <button class="dark-light-mood">Icono</button>
+                                <button class="dark-light-mood boton_carrito"><i
+                                        class="bx bx-shopping-bag"></i></button>
                             </li>
-                            <li class="nav-item">
-                                <button class="dark-light-mood"><i class="bx bx-shopping-bag"></i></button>
-                            </li>
-                            
-                            <!-- AGREGAR CATEGORIAS EN VERSION MOBILE (Más a futuro) -->
+
+                            <!-- AGREGAR CATEGORIAS EN VERSION MOBILE (A futuro) -->
                             <!-- <li>
                                 <div>CATEGORIAS</div>
                             </li> -->
@@ -56,19 +56,51 @@
         </nav>
     </header>
 
-    <div class="banner_productos">
+    <div class="banner">
         <img src="../public/images/banner.webp" alt="">
     </div>
 
+    <div class="ocultar_carrito">
+        <div class="carrito">
+            <div class="carrito_listado">
+                <div class="carrito_head">
+                    <p>Carrito de compras</p>
+                    <button class="cerrar_carrito"><i class="bx bx-plus close"></i></button>
+                </div>
+
+                <div class="carrito_vacio">
+                    <!-- Mensaje -->
+                </div>
+
+                <div class="carrito_container">
+                    <!-- Estructura dinámica -->
+                </div>
+            </div>
+
+            <div class="carrito_footer">
+                <div class="carrito_total">
+                    <!-- Sumar valor total de productos -->
+                    <p>Total:</p>
+                    <p>$ <span class="precio_total">0.00</span></p>
+                </div>
+
+                <div class="carrito_botones">
+                    <button class="finalizar_compra">Finalizar Compra</button>
+                    <a>Ver más productos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="categorias_container">
-        <h2>Categorías</h2>
+        <h2>CATEGORÍAS</h2>
         <div class="categorias">
             <!-- Botones dinámicos por categoría -->
         </div>
     </div>
 
-    <section class="hero_container">
-        <div class="hero_box">
+    <section class="panel_container">
+        <div class="panel_box">
             <article class="filtros_container">
                 <div class="dropdown">
                     <p>Ordenar por:</p>
@@ -91,7 +123,7 @@
                         </h2>
                         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                             <div class="accordion-body">
-                                <!-- Inputs dinámicos según marca -->
+                                <!-- Inputs dinámicos de marcas según categoría filtrada -->
                             </div>
                         </div>
                     </div>
@@ -106,27 +138,19 @@
                         <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                             <div class="accordion-body">
                                 <ul>
-                                    <a href="#"><input type="checkbox">Hasta 100</a>
-                                    <a href="#"><input type="checkbox">Hasta 200</a>
-                                    <a href="#"><input type="checkbox">Hasta 300</a>
+                                    <div>
+                                        <input type="radio" name="precioRadio" value="100">Hasta $100
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="precioRadio" value="200">Hasta $200
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="precioRadio" value="-201">Más de $200   
+                                    </div>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree">
-                                Filtro Aleatorio
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                            <div class="accordion-body">
-                                <p>Según característica especial de un producto</p>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </article>
         </div>
@@ -137,23 +161,23 @@
 
         <template>
             <article class="productos_container">
-                    <div class="img_producto">
-                        <img src="../public/images/samsung_S24+.png" alt="">
-                    </div>
-                    <div class="datos_producto">
+                <div class="img_producto">
+                    <!-- Img del producto -->
+                </div>
 
-                        <div class="precio_producto">
-                            <h2>Nombre del producto</h2>
-                            <div>
-                                <span>Stock </span>
-                                <p>$ </p>
-                            </div>
-                        </div>
-
-                        <div class="btn_producto_container">
-                            <button class="boton_producto">Agregar a carrito <i class="bx bxs-cart-add"></i></button>
+                <div class="datos_producto">
+                    <div class="precio_producto">
+                        <h2>Nombre del producto</h2>
+                        <div>
+                            <span>Precio</span>
+                            <p>$ </p>
                         </div>
                     </div>
+
+                    <div class="btn_producto_container">
+                        <button class="boton_producto">Agregar a carrito <i class="bx bxs-cart-add"></i></button>
+                    </div>
+                </div>
             </article>
         </template>
     </section>
@@ -161,7 +185,8 @@
     <footer>
         <div class="footer_container">
             <div class="footer_logo">
-                <a href="../index.html"><img src="../public/images/samsung_S24+.png" alt=""></a>
+                <!-- <a href="../index.html"><img src="../public/images/samsung_S24+.png" alt=""></a> -->
+                <a href="../index.html">iTech</a>
             </div>
 
             <div class="footer_datos">
@@ -200,10 +225,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
     <script src="../js/constructor_producto.js"></script>
     <script src="../js/sistema.js"></script>
-    <script src="../js/modo.js"></script>
+    <script src="../js/carrito.js"></script>
     <script src="../js/productos.js"></script>
 </body>
 

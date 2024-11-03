@@ -1,7 +1,7 @@
-//! Constructor general, la estructura de cada elemento Producto.
+//! Constructor general. Estructura de cada elemento Producto.
 
 class Producto {
-    constructor(id_categoria, categoria, marca, nombre_modelo, precio, descripcion, imagen) {
+    constructor(id_categoria, categoria, marca, nombre_modelo, precio, producto_destacado, imagen, descripcion) {
         this.id = this.generar_id()
         this.stock = this.stock_random()
 
@@ -10,8 +10,9 @@ class Producto {
             this.marca = marca,
             this.nombre_modelo = nombre_modelo,
             this.precio = precio,
-            this.descripcion = descripcion,
-            this.imagen = imagen
+            this.producto_destacado = producto_destacado,
+            this.imagen = imagen,
+            this.descripcion = descripcion
     }
 
     generar_id() {
